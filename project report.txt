@@ -1,0 +1,11 @@
+online simulator used: Tinkercad or Wokwi
+
+components needed: Arduino Uno, one photoresistor, mini breadboard, 220 Ohm resistor, 1000 Ohm resistor, an LED, multimeter and connecting wires.
+
+connections and procedure: positive terminal (anode) of led is connected through a 220 ohm resistor to the PWM digital pin 9 of Arduino uno board and negative terminal (cathode) is connected to the ground (GND) present on the board. first terminal of photoresistor is connected to 5V supply on the board. second terminal is grounded through a 1000 ohm resistor and also connected commonly to analog pin A0 of the board. upload the c++ code that has the mapping of analog voltage input through pin A0 with PWM voltage output of pin 9 to the board and then test the working.
+
+photoresistor working: its resistance is directly dependent on light intensity falling on it. higher the intensity, lower the resistance and lower the intensity, higher the resistance.
+
+observation: when brightness is increased, the resistance of photoresistor falls and so, the voltage input through pin A0 falls. from the mapping done in the cpp code, we get low voltage output from PWM pin 9 that is fed into the led. so the led glows dim. as bightness decreases, resistance of photoresistor increases and so does input voltage through pin A0. as a result, we get higher voltage output through pin 9 that results in led to glow brighter. hence, the led has the ability to automatically adjusts its brightness based on the ambient light, providing optimal lighting conditions for any purpose. this can be effectively employed on a larger scale using SSR (solid state relay) like in smart street lighting or smart desk lamp.
+
+a solid state relay (ssr) is an electronic switching device that switches on or off depending on the control signal applied. they are similar to electromechanical relay except that they contain no moving parts, have longer operational lifetime and faster switching speed.
